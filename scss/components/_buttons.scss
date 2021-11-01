@@ -3,31 +3,40 @@
 /* ============================================= */
 
 .btn {
-    margin-top: 15px;
-    width: 100%;
-    color: $white;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;    
+    @include button;   
   }
   
   .default {
     background-color: $color-default;
+      &:hover {
+        background-color: lighten($color-default, 15%);
+      }
   }
   
   .error {
     background-color: $color-error;
+      &:hover {
+        background-color: lighten($color-error, 15%);
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $color-info;
+      &:hover {
+        background-color: lighten($color-info, 15%);
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $color-sucess;
+      &:hover {
+        background-color: lighten($color-sucess, 15%);
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $color-warning;
+      &:hover {
+        background-color: lighten($color-warning, 15%);
+    }
   }
