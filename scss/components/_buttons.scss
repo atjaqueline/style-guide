@@ -9,7 +9,7 @@
   .default {
     background-color: $color-default;
       &:hover {
-        background-color: lighten($color-default, 15%);
+        background-color: lighten($color-default, 15%); 
       }
   }
   
